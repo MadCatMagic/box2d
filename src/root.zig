@@ -3474,8 +3474,8 @@ pub const struct_b2SensorEndTouchEvent = extern struct {
 };
 pub const SensorEndTouchEvent = struct_b2SensorEndTouchEvent;
 pub const struct_b2SensorEvents = extern struct {
-    beginEvents: [*]SensorBeginTouchEvent = zeroes([*]SensorBeginTouchEvent),
-    endEvents: [*]SensorEndTouchEvent = zeroes([*]SensorEndTouchEvent),
+    beginEvents: ?[*]SensorBeginTouchEvent = zeroes([*]SensorBeginTouchEvent),
+    endEvents: ?[*]SensorEndTouchEvent = zeroes([*]SensorEndTouchEvent),
     beginCount: c_int = 0,
     endCount: c_int = 0,
 };

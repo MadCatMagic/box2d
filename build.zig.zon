@@ -9,5 +9,6 @@
         "build.zig.zon",
         "box2d/include",
         "box2d/src",
+        "src",
     },
 }
